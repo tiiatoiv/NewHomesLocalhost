@@ -1,0 +1,103 @@
+
+main{
+    width: 100%;
+    display: flex;
+}
+
+article > h2 {
+    color: rgb(0, 0, 0);
+}
+
+picture{
+    width: 40%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 30px ;
+    font-family: Roboto;
+}
+
+h2 {
+    font-family: Roboto;
+}
+
+p {
+    font-family: Roboto;
+}
+
+#like{
+    margin-top: auto;
+}
+
+#phone{
+    display: none;
+}
+
+#email, #phone, #fb, #twit {
+    margin-top: auto;
+    text-align: center;
+    padding: 9px 25px;
+    background-color:rgba(255, 255, 255, .6);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+#fb {
+    background-color: #3b5998;
+    color: white;
+}
+
+#twit {
+    background-color: #fcaf45;
+    color: white;
+}
+
+#email:hover, #phone:hover {
+    background-color:rgba(255, 255, 255, .4);    
+}
+
+section{
+    display: flex;
+    flex-grow: 1;
+}
+
+section article {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background:rgb(255,182,193,0.3);
+    margin: 10px;
+}
+
+
+
+#share-buttons {
+    margin: 10px 0;
+    padding: 20px 0;
+    border-top: 1px solid lightpink;
+    border-bottom: 1px solid lightpink;
+    
+}
+
+/* adoptive and responsive style for mobile version -Lily */
+@media (max-width: 880px) {
+    #phone{
+        display: block;
+    }
+    #email{
+        display: none;
+    }
+    main, section{
+        flex-direction: column;
+    }
+    picture{
+        width: 100%;
+    }
+}

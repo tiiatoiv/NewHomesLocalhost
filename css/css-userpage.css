@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo|Permanent+Marker&display=swap');
+
+*{
+    padding:10px;
+    margin:0;
+    box-sizing:border-box;
+}
+
+/*------Header------*/
+
+
+header > li, a, button {
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    font-family: Roboto;
+}
+
+.nav-brand {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 25px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px ;
+    background-color: #FFB6C1;
+    z-index: 2;
+    top: 0;
+    position: sticky;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color:#A9A9A9;
+}
+
+
+button {
+    padding: 9px 25px;
+    background-color:rgba(255, 255, 255, .6);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color:rgba(255, 255, 255, .4);
+
+}
+
+.search-button {
+    background-color:#FFB6C1;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+/*----------User info-----------*/
+.light-border {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.container {
+    float: left;
+    padding: 20px;
+    height: 300px;
+}
+
+.search {
+    margin: 10px;
+}
+
+/*------Grid ------ */
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.column {
+
+}
+
+.userborder {
+    box-shadow: 1px 2px 10px #888888;
+}
+
+main {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.topmargin {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.form-wrapper {
+    width: 33%;
+}
+
+aside {
+    width: 30%;
+}
+/*----------Fonts and texts----------*/
+h1 {
+    font-size: 30px ;
+    font-family: "Roboto";
+}
+
+h2 {
+    font-size: 18px;
+    font-family: "Roboto";
+}
+
+h3 {
+    font-size: 26px;
+    text-align: center;
+    font-family: "Roboto";
+}
+
+h4 {
+    font-size: 26px;
+    text-align: left;
+    font-family: "Roboto";
+}
+
+p {
+    font-size: 16px;
+    text-align: center;
+    font-family: "Roboto";
+}
+/*-----Aligning stuff classes-----*/
+.centertext {
+    text-align: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+li {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.smaller {
+    width: 80%;
+}
+
+.ulvertical {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.ulhorizontal {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+ul.doglist li{
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+}
+
+.resp {
+    width: 70%;
+}
+
+.infoch {
+    padding: 9px 25px;
+    background-color: rgba(255, 182, 193, 0.59);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.infoch:hover {
+    background-color: rgba(255, 255, 255, .4);
+}
+/*--------Styling buttons---------*/
+.profilebutton {
+    padding: 9px 25px;
+    background-color: rgba(255, 182, 193, 0.59);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.profilebutton:hover {
+    background-color: rgba(255, 255, 255, .4);
+}
+
+/*Open the Create a Port form button */
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    width: 280px;
+}
+
+/* The popup form hidden by default */
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    z-index: 9;
+}
+
+.messageform-popup {
+    display: none;
+    position: fixed;
+    bottom: 20%;
+    left: 0;
+    z-index: 9;
+    backface-visibility: hidden;
+}
+
+.form-container {
+    width: 600px;
+    padding: 10px;
+    background-color: white;
+    font-family: Roboto;
+}
+
+.flow {
+    max-height: 100vh;
+    overflow: auto;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+    width: 50%;
+    padding: 14px;
+    margin: 0px 0 0px 0;
+    border: none;
+    background: #f1f1f1;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-container .btn {
+    background-color: grey;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+
+.form-container .send {
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 50px;
+    margin-bottom: 2px;
+    opacity: 0.8;
+}
+
+.form-container .cancel {
+    background-color: lightgray;
+    width: 40%;
+}
+
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+/*----------Footer-----------*/
+footer{
+
+}
+
+.footer-distributed{
+    width: 100%;
+    text-align: left;
+    font-size: 10px;
+  /*  position: fixed;
+    bottom: 0;*/
+    z-index: 0;
+    background-color: #FFB6C1;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.footer-distributed .footer-left {
+    width: 30%;
+}
+
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    text-decoration: none;
+    color:  inherit;
+}
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-center i {
+    background-color:  #50575c;
+    font-size:20px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    vertical-align: middle;
+    margin:0;
+}
+.footer-distributed .footer-center div {
+}
+
+.footer-distributed .footer-right {
+    width: 30%;
+}
+
+@media (max-width: 880px) {
+
+    header { padding-top:20px; }
+
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .footer-distributed{
+        width: 100%;
+        text-align: left;
+        font-size: 10px;
+        position: static;
+        bottom: 0;
+        z-index: 0;
+        background-color: #FFB6C1;
+    }
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+        display: block;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer-distributed .footer-center i    {
+        margin-left: 0;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .resp {
+        width: 100%;
+    }
+
+    .smaller {
+        width: 100%;
+    }
+
+    .form-popup {
+        width: 80%;
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+}
+
+.form-container {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    font-family: Roboto;
+    }
+        footer { position: static; }
+        header { padding-top:20px; }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .form-popup {
+        width: 100%;
+        display: none;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 9;
+    }
+
+    .messageform-popup {
+        width: 100%;
+        display: none;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 9;
+    }
+
+    .form-container {
+        width: 100%;
+        padding: 10px;
+        background-color: white;
+        font-family: Roboto;
+    }
+
+
+        footer { position: static; }
+        header { padding-top:20px; }
+
+
+    .footer-distributed{
+        box-sizing: border-box;
+        text-align: left;
+        font-size:16px;
+        background-color: #FFB6C1;
+    }
+}

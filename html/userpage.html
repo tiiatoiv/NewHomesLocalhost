@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>NewHomes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="../css/css-userpage.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!---Navigation bar--->
+<header>
+    <a class="nav-brand" href="index.html"><b>NewHomes</b></a>
+    <nav>
+        <ul class='nav-links'>
+            <li><a href="index.html">Home</a></li>
+            <li id="userpage"><a href="userpage.html">Userpage</a></li>
+            <li><a href="info.html">FAQs</a></li>
+        </ul>
+    </nav>
+    <a id="loginbutton" class="button nav-button" href="login.html"><button>Sign In</button> </a>
+    <a href="#" id="logoutbutton"><button>Sign Out</button> </a>
+
+
+</header>
+<!---White body part--->
+<div class="topmargin">
+    <div class="row">
+        <!---User info--->
+        <div class="col-4 column"><br>
+            <h4>My profile</h4><br><br>
+        <div class="userborder"><br>
+            <ul>
+            <li class="ulhorizontal"><a id="modifyButton" class="profilebutton" href="modifyuser.html">Edit profile</a></li>
+            <li class="ulhorizontal"><a id="deleteButton" class="profilebutton" href="deleteuser.html">Delete profile</a></li>
+            </ul><br>
+            <p>Logged in:</p>
+
+            <ul id="userinfolist">
+            </ul>
+
+        </div>
+            <br><br>
+            <h4>My messages</h4><br>
+            <div class="userborder"><br>
+                <button class="profilebutton" onclick="messageFormOpen()">Send Message</button><br><br><br>
+                <h2>Received messages</h2>
+                <ul id="usermessagelist">
+                </ul><br>
+                <h2>Sent messages</h2>
+                <ul id="sentmessages"></ul>
+
+            </div>
+        </div>
+<!---My posts--->
+        <div class="col-8 column">
+            <ul class="center">
+                <li class=" center"><h4>My posts</h4></li>
+                <li id="postbutton" class="center"><button class="open-button center" onclick="openForm()">Create a post</button></li>
+            </ul>
+
+            <ul id="mydogslist" class="doglist"></ul>
+
+            <!---Liked posts , nothing yet here--->
+              <ul class="center">
+                <li class="ulhorizontal"><h4>Liked dogs</h4></li>
+            </ul>
+            <ul>
+                <p>No posts yet... Here will be created a list of liked posts from database.</p></ul>
+        </div>
+    </div>
+</div>
+<!---Form to Create post--->
+<div class="form-popup center" id="myForm">
+<form method="post" class="light-border form-container flow" id="addPostForm">
+    <h3>Add post</h3>
+    <p>Here you can create a new post of your loved friend,<br> who is in a need of a new good home.
+        <br>Please provide all necessary information of the dog<br> in the description field.</p><br>
+    <p>Dog's name</p>
+    <input id="name" class="light-border center" type="text" name="name" placeholder="Name" required>
+    <p>Age</p>
+    <input id="dob" class="light-border center" type="date" name="dob" placeholder="Age" required>
+    <p>Breed</p>
+    <select id="breed" class="light-border breed-list center" name="breed"></select>
+    <p> (your username)</p>
+    <select id="owner" class="light-border users-list center" name="owner"></select>
+    <p>Location</p>
+    <input id="location" class="light-border center" type="text" name="location" placeholder="location" required>
+    <p>Description</p>
+    <input id="description" class="light-border center" type="text" name="description" placeholder="Write something about your dog..." required>
+    <p>Add picture</p>
+    <input id="filename" class="light-border center" type="file" name="dog"><br><br>
+    <button class="light-border center send" type="submit">Create a post</button><br>
+    <button type="button" class="btn cancel center" onclick="closeForm()">Close</button>
+</form></div>
+<!---Form to Send message--->
+<div class="messageform-popup center" id="myMessageForm">
+    <form method="post" class="light-border form-container" id="addMessageForm">
+        <h3>Send a Message</h3><br>
+        <p>Sender (your username)</p>
+        <select id="sender" class="light-border users-list center" name="sender"></select>
+        <p>Receiver</p>
+        <select id="receiver" class="light-border receiver-list center" name="receiver"></select>
+        <p>Message</p>
+        <input id="message" class="light-border center" type="text" name="message" placeholder="message" required><br>
+        <button class="light-border center send" type="submit">Send</button><br>
+        <button type="button" class="btn cancel center" onclick="messageFormClose()">Close</button>
+    </form></div>
+<!---Footer--->
+<footer class="footer-distributed">
+
+    <div class="footer-left">
+        <h2 style="font-family: 'Permanent Marker', cursive">NewHomes</h2>
+        <p class="footer-links">
+            <a href="#">Home</a>
+            <a href="#">Terms and Conditions</a>
+        </p>
+        <p class="footer-company-name">© 2019 NewHomes.Co</p>
+    </div>
+
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p>Leiritie 10, Vantaa, Finland </p>
+        </div>
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+358 999 888</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p>support@newhomes.com</p>
+        </div>
+    </div>
+
+    <div class="footer-right">
+        <h3>Like us on</h3>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+    </div>
+</footer>
+<script src="../js/userpage.js"></script>
+<script src="../js/serialize.js"></script>
+</body>
+</html>
